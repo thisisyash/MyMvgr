@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="shaavy.mycollege.mvgr.mymvgr.AnnouncementActivity"
+    >
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/goback"
+        android:layout_marginTop="15dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="0.5dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/backarrow"/>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Result"
+        android:id="@+id/result"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:layout_toRightOf="@+id/goback"/>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+

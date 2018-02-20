@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shaavy.mycollege.mvgr.mymvgr.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/fragment_background"
+        android:padding="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/yash" />
+
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Application designed by: "
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_name"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="YASH (YAswanth SHankar)"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Ping me at: www.thisisyash.com "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/department"
+            android:layout_marginTop="10dp"
+            android:text="Believes that fantasy and reality are chemically identical"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Fan of Umadevi, in love with rocket science "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stream"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="An unstable H- and in love with a stable H+  "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

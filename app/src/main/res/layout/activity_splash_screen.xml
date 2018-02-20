@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shaavy.mycollege.mvgr.mymvgr.SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/mvgrlogo1" />
+
+
+        <TextView
+            android:id="@+id/disptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Welcome to MyMvgr"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disptext"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="60dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/loading"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn2"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Loading ! Make sure you have
+an Internet Connection"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+
+        <ProgressBar
+            android:id="@+id/statusbar"
+            android:layout_below="@id/btn2"
+            android:layout_width="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/loading"
+            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/white"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

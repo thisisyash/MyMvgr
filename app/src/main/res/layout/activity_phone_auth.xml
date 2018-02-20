@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context="shaavy.mycollege.mvgr.mymvgr.PhoneAuthActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:text="Please verify your mobile number to use the application"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/phone_auth_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/field_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:fontFamily="@font/nunito_semibold"
+                android:background="@drawable/input_background"
+                android:inputType="phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="12dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:background="@drawable/input_background"
+
+                android:id="@+id/field_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="verification_code"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="12dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3.0">
+
+            <Button
+                android:id="@+id/button_start_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Start Verify"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_verify_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Verify O T P"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Resend O T P"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verification status"
+            android:textColor="@color/white"
+            android:padding="20dp"
+            android:textSize="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/statusbar"
+            android:layout_width="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/status"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

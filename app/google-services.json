@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "800810463107",
+    "firebase_url": "https://mymvgr-b1364.firebaseio.com",
+    "project_id": "mymvgr-b1364",
+    "storage_bucket": "mymvgr-b1364.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800810463107:android:69c539f810306201",
+        "android_client_info": {
+          "package_name": "shaavy.mycollege.mvgr.mymvgr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800810463107-bs70bctlqg1i9aup8f5bq9t2j6dm2egh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shaavy.mycollege.mvgr.mymvgr",
+            "certificate_hash": "e6a6f3e75da84aab5053ecf476712c99244036cb"
+          }
+        },
+        {
+          "client_id": "800810463107-cv1lk403m4lplopt727dtgc74596j36s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXK_-4kOhXBI53yNBcjV83tfhA3X1YxMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800810463107-cv1lk403m4lplopt727dtgc74596j36s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

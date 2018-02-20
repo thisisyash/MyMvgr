@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/background">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rels">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/goback"
+            android:layout_marginTop="15dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="0.5dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/backarrow"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload File"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:layout_toRightOf="@+id/goback"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout"
+        android:layout_below="@+id/rels"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/btnUpDirectory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="back"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btnViewSDCard"
+            android:layout_toRightOf="@+id/btnUpDirectory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Browse"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayout"
+        android:id="@+id/rels2">
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/noticedown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Browse the file and double click on the file to start uploading"
+            android:autoSizeTextType="uniform"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/rels2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvInternalStorage"
+        android:pointerIcon="cell"></ListView>
+</RelativeLayout>

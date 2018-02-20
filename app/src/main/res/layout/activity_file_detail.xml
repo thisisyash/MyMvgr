@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="shaavy.mycollege.mvgr.mymvgr.FileDetailActivity">
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/register_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="1.You can upload only .xlsx(excel) files
+        2.The sheet should contain only two coloumns i,e the roll number and the
+        respective percentage
+        3.Browse the file and double click on the file to upload in next activity
+        4.Please provide the details of the file below
+"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_heading"
+        android:layout_centerHorizontal="true"
+        android:lines="5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="Enter the details of file,
+         ex:Third year, sec-A, attendance report,for August."
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
